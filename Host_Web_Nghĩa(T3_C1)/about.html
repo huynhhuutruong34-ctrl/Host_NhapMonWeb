@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - FASHION SHOP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="index.html">FASHION SHOP</a></div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button class="btn btn-secondary" id="loginBtn">Đăng Nhập</button>
+      <button class="btn btn-secondary" id="registerBtn">Đăng Ký</button>
+      <button class="btn btn-primary" id="cartBtn">Giỏ Hàng (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="about-grid">
+        <article class="about-card">
+          <span class="card-tag">Sứ mệnh</span>
+          <h2>Thời trang tinh giản cho cuộc sống hiện đại</h2>
+          <p>Chúng tôi mong muốn mang đến các thiết kế dễ phối đồ, vừa vặn và phù hợp với nhiều bối cảnh, từ công sở đến dạo phố.</p>
+        </article>
+        <article class="about-card">
+          <span class="card-tag">Giá trị</span>
+          <h2>Chất lượng, thoải mái, tự tin</h2>
+          <p>Mỗi sản phẩm đều được lựa chọn với tiêu chí bền đẹp, form dáng chuẩn và sắc màu dễ kết hợp để bạn luôn cảm thấy tự tin.</p>
+        </article>
+        <article class="about-card">
+          <span class="card-tag">Đội ngũ</span>
+          <h2>Đam mê sáng tạo và tận tâm</h2>
+          <p>Đội ngũ sáng tạo của chúng tôi bao gồm những người trẻ, am hiểu xu hướng và luôn lắng nghe khách hàng.</p>
+        </article>
+      </div>
+
+      <div class="about-highlight">
+        <div>
+          <h3>Trải nghiệm mua sắm mượt mà</h3>
+          <p>Website được thiết kế để bạn dễ dàng khám phá, lựa chọn và theo dõi sản phẩm. Hình ảnh sắc nét và nội dung rõ ràng giúp bạn quyết định nhanh chóng hơn.</p>
+          <p>Shop Quần Áo bắt đầu với một ý tưởng đơn giản: tạo ra những bộ trang phục vừa đẹp, vừa dễ mặc. Từ những mẫu váy nữ thanh lịch đến outfit nam năng động, chúng tôi không ngừng làm mới bộ sưu tập.</p>
+        <p>Trong tương lai, chúng tôi tiếp tục mở rộng dòng sản phẩm, hoàn thiện dịch vụ giao hàng và chăm sóc khách hàng để mỗi lần mua sắm đều là một trải nghiệm đáng nhớ.</p>
+        </div>
+        <div class="about-stats">
+          <div>
+            <strong>150+</strong>
+            <span>Sản phẩm đa dạng</span>
+          </div>
+          <div>
+            <strong>98%</strong>
+            <span>Khách hàng hài lòng</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Hỗ trợ trực tuyến</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p> © Thời trang đơn giản và phong cách.</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">×</span>
+      <h3 id="modalTitle">Thông báo</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

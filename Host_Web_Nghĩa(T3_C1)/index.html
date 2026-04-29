@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> FASHION SHOP </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="index.html">FASHION SHOP</a></div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button class="btn btn-secondary" id="loginBtn">Đăng Nhập</button>
+      <button class="btn btn-secondary" id="registerBtn">Đăng Ký</button>
+      <button class="btn btn-primary" id="cartBtn">Giỏ Hàng (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Chào mừng đến với Shop Chúng Tôi</h1>
+        <br>
+        <p>Thời trang phong cách, hiện đại, đơn giản, và tiện lợi. Hãy truy cập và tìm ngay sản phẩm ưng ý của bạn.</p>
+        <br>
+        <a href="shop.html" class="btn btn-primary">Xem ngay có gì</a>
+      </div>
+      <div class="hero-image "></div>
+    </section>
+
+    <section class="featured-section">
+      <div class="section-heading">
+        <h2>SẢN PHẨM NỔI BẬT</h2>
+        <p>Những item được yêu thích nhất hiện nay</p>
+        <br>
+      </div>
+      <ul class="featured-list">
+        <li class="featured-card">
+          <img src="img/img_9458_8525da75e15c4154878f4431ad88dc64_master.jpg" alt="Áo nữ xinh xắn">
+          <h3>Áo nữ xinh xắn</h3>
+          <p>Thiết kế mềm mại, tone hồng ngọt ngào.</p>
+        </li>
+        <li class="featured-card">
+          <img src="img/img_8648_1759592def994af4ab1b35c3c2f93ca4_master.jpg" alt="Đầm nữ thời trang">
+          <h3>Đầm nữ thanh lịch</h3>
+          <p>Vừa đi chơi vừa công sở cực xinh.</p>
+        </li>
+        <li class="featured-card">
+          <img src="img/vngoods_484664_sub3_3x4.avif" alt="Áo khoác nữ hiện đại">
+          <h3>Áo khoác nữ hiện đại</h3>
+          <p>Ấm áp, thời trang cho ngày se lạnh.</p>
+        </li>
+        <li class="featured-card">
+          <img src="img/10f25dpa027-l-indigo-1-jpg-dd9e.webp" alt="Quần jean nam trẻ trung">
+          <h3>Quần jean nam trẻ trung</h3>
+          <p>Đậm chất streetwear, dễ phối đồ.</p>
+        </li>
+        <li class="featured-card">
+          <img src="img/img_6254_9398b57a0e2d460697e3a7e93d8e6171_master.jpg" alt="Áo sơ mi nữ thanh lịch">
+          <h3>Áo sơ mi nữ thanh lịch</h3>
+          <p>Phong cách công sở nhẹ nhàng và tinh tế.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p> © Thời trang đơn giản và phong cách.</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">×</span>
+      <h3 id="modalTitle">Thông báo</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

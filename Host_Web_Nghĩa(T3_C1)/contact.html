@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - FASHION SHOP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="index.html">FASHION SHOP</a></div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button class="btn btn-secondary" id="loginBtn">Đăng Nhập</button>
+      <button class="btn btn-secondary" id="registerBtn">Đăng Ký</button>
+      <button class="btn btn-primary" id="cartBtn">Giỏ Hàng (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+
+      <div class="contact-grid">
+        <div class="contact-form-card">
+          <span class="card-tag">Gửi tin nhắn</span>
+          <h2>Hãy để chúng tôi giúp bạn</h2>
+          <p>Điền thông tin bên dưới và chúng tôi sẽ liên hệ lại càng sớm càng tốt.</p>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Họ và tên</label>
+                <input id="name" type="text" placeholder="Nhập họ tên của bạn">
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="suport@shopquanao.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field full-width">
+                <label for="message">Nội dung</label>
+                <textarea id="message" rows="6" placeholder="Nhập yêu cầu của bạn gửi cho chúng tôi nhé !"></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-primary">Gửi liên hệ</button>
+            </div>
+          </form>
+
+          <div class="contact-summary">
+            <br>
+            <span class="card-tag">Thông tin liên hệ</span>
+            <div class="contact-meta">
+              <div>
+                <strong>Email</strong>
+                <p>support@shopquanao.com</p>
+              </div>
+              <div>
+                <strong>Hotline</strong>
+                <p>0988 7777777</p>
+              </div>
+              <div>
+                <strong>Địa chỉ</strong>
+                <p>180, Cao Lỗ, P4, Q8, TP. Hồ Chí Minh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+    <p> © Thời trang đơn giản và phong cách.</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">×</span>
+      <h3 id="modalTitle">Thông báo</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

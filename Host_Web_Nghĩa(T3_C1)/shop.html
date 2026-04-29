@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - FASHION SHOP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="index.html">FASHION SHOP</a></div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button class="btn btn-secondary" id="loginBtn">Đăng Nhập</button>
+      <button class="btn btn-secondary" id="registerBtn">Đăng Ký</button>
+      <button class="btn btn-primary" id="cartBtn">Giỏ Hàng (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-section">
+      <div class="section-heading">
+      </div>
+
+      <div class="shop-layout">
+        <aside class="shop-filter">
+          <div class="filter-header">
+            <h3>Bộ lọc</h3>
+            <p>Chọn loại sản phẩm</p>
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-type="all">Tất cả</button>
+            <button class="filter-btn" data-type="quan">Quần</button>
+            <button class="filter-btn" data-type="ao">Áo</button>
+            <button class="filter-btn" data-type="vay">Váy</button>
+          </div>
+        </aside>
+
+        <div class="shop-content">
+          <h3 class="shop-intro">Tất cả sản phẩm</h3>
+          <ul class="product-list">
+            <li class="product-card" data-type="ao">
+              <img src="img/polo.webp" class="product-image">
+              <p class="product-tag">Áo</p>
+              <h3>Áo Polo Basic</h3>
+              <p class="price">259.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="quan">
+              <img src="img/Quan nu.webp" alt="Quần Jean Nam" class="product-image">
+              <p class="product-tag">Quần</p>
+              <h3>Quần Jean Nữ</h3>
+              <p class="price">289.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="ao">
+              <img src="img/thun nan.webp" alt="Áo Blouse Nữ" class="product-image">
+              <p class="product-tag">Áo</p>
+              <h3>Áo Blouse Nữ</h3>
+              <p class="price">219.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="quan">
+              <img src="img/quan ngắn nữ.webp" alt="Quần Tây Nữ" class="product-image">
+              <p class="product-tag">Quần</p>
+              <h3>Quần Tây Nữ</h3>
+              <p class="price">269.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="vay">
+              <img src="img/đầm nữ.webp" alt="Váy Dự Tiệc Nữ" class="product-image">
+              <p class="product-tag">Váy</p>
+              <h3>Váy Dự Tiệc Nữ</h3>
+              <p class="price">399.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="vay">
+              <img src="img/váy đầm.webp" alt="Váy Maxi Nữ" class="product-image">
+              <p class="product-tag">Váy</p>
+              <h3>Váy Maxi Nữ</h3>
+              <p class="price">349.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="ao">
+              <img src="img/so mi nam.webp" alt="Áo Blouse Nữ" class="product-image">
+              <p class="product-tag">Áo</p>
+              <h3>Áo Sơ Mi Nam</h3>
+              <p class="price">419.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="ao">
+              <img src="img/so mi nu.webp" alt="Áo Blouse Nữ" class="product-image">
+              <p class="product-tag">Áo</p>
+              <h3>Áo Sơ Mi Nữ</h3>
+              <p class="price">249.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            
+            </li>
+            <li class="product-card" data-type="vay">
+              <img src="img/img_5504_e56cc36444f5468594e3d3c07c5707ee_master.jpg" alt="Váy Nữ" class="product-image">
+              <p class="product-tag">Váy</p>
+              <h3>Váy Bali Nữ</h3>
+              <p class="price">269.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="vay">
+              <img src="img/img_8648_1759592def994af4ab1b35c3c2f93ca4_master.jpg" alt="Váy Ngắn Nữ" class="product-image">
+              <p class="product-tag">Váy</p>
+              <h3>Váy Ngắn Nữ</h3>
+              <p class="price">369.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="quan">
+              <img src="img/img_9458_8525da75e15c4154878f4431ad88dc64_master.jpg" alt="Quần Ngắn Nữ" class="product-image">
+              <p class="product-tag">Quần</p>
+              <h3>Quần Ngắn Nữ</h3>
+              <p class="price">269.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+            <li class="product-card" data-type="quan">
+              <img src="img/KTS.jpg" alt="Quần Short Nữ" class="product-image">
+              <p class="product-tag">Quần</p>
+              <h3>Quần Short Nữ</h3>
+              <p class="price">269.000₫</p>
+              <button class="btn btn-primary add-to-cart">Thêm vào giỏ</button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+    <p> © Thời trang đơn giản và phong cách.</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">×</span>
+      <h3 id="modalTitle">Thông báo</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
