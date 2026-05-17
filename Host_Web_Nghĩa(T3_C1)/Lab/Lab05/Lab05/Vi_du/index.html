@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bố cục BookStore - Banner riêng</title>
+  <style>
+    /* * {
+        box-sizing: border-box;
+    } */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section {
+      border: 3px solid #333;
+      padding: 10px;
+      margin: 5px;
+    }
+    .header, .featured-products, .promo-banner, .articles, .footer {
+      width: 100%;
+    }
+    /* Khối menu + banner */
+    .menu-banner {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .menu-left {
+      flex: 1;
+      border: 1px dashed #333;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    .banner-right {
+      flex: 3;
+      border: 1px dashed #333;
+      padding: 10px;
+    }
+    .product-list, .article-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .product-item, .article-item {
+      border: 1px dashed #333;
+      padding: 5px;
+      width: 23%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="section header">
+    <div>Header Top: Email, mạng xã hội, ngôn ngữ, đăng nhập, giỏ hàng, hotline</div>
+    <div>Header Bottom: Logo và thanh menu chính (Trang chủ, Cửa hàng, Bài viết, Liên hệ)</div>
+  </div>
+
+  <!-- Khối Menu + Banner -->
+  <div class="section menu-banner">
+    <div class="menu-left">
+      Menu trái: Danh mục sản phẩm (Văn học, Kinh tế, Thiếu nhi, Kỹ năng sống, Giáo khoa, Từ điển, Lịch sử, Y học, Tạp chí, Ngoại ngữ, Giáo trình)
+    </div>
+    <div class="banner-right">
+      Banner chính: Hình ảnh sách chồng lên nhau, thông điệp khuyến mãi “Thế giới sách – Mua ngay”
+      <div>Ô tìm kiếm sản phẩm: Lọc danh mục, nhập từ khóa, nút tìm kiếm</div>
+    </div>
+  </div>
+
+  <!-- Sản phẩm nổi bật -->
+  <div class="section featured-products">
+    <h3>SẢN PHẨM NỔI BẬT</h3>
+    <div class="product-list">
+      <div class="product-item">Sản phẩm 1: Nghệ Thuật Tư Duy Rành Mạch</div>
+      <div class="product-item">Sản phẩm 2: Nghệ Thuật Tư Duy Phản Biện</div>
+      <div class="product-item">Sản phẩm 3: Hộp Bút Vải Canvas 02 Ngăn</div>
+      <div class="product-item">Sản phẩm 4: Kỷ Luật Bản Thân</div>
+    </div>
+  </div>
+
+  <!-- Banner khuyến mãi riêng -->
+  <div class="section promo-banner">
+    <h3>BANNER KHUYẾN MÃI</h3>
+    <div>Banner khuyến mãi: World Book Day Big Sale</div>
+    <div>Banner khuyến mãi: Big Sale World Book Day</div>
+  </div>
+
+  <!-- Bài viết -->
+  <div class="section articles">
+    <h3>BÀI VIẾT</h3>
+    <div class="article-list">
+      <div class="article-item">Bài viết 1: [My reading list] sách, truyện, blog hay nhất tôi từng đọc</div>
+      <div class="article-item">Bài viết 2: Đi tìm cuộc đời bị đánh cắp của ông bà tôi – Phơi ra...</div>
+      <div class="article-item">Bài viết 3: Ngọn lửa xanh – Bay cao – Tự truyện thứ hai của Yuzuru Hanyu</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="section footer">
+    <div>Thông tin liên hệ: Địa chỉ, SĐT, Email</div>
+    <div>Liên kết hỗ trợ: Yêu cầu hỗ trợ, Chính sách, Trở thành thành viên</div>
+    <div>Form đăng ký nhận tin và liên kết mạng xã hội</div>
+  </div>
+</body>
+</html>

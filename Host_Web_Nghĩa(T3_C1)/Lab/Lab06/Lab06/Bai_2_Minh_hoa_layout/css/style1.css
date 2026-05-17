@@ -1,0 +1,76 @@
+/* Reset cơ bản */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Khung ngoài giống hình */
+.topnav {
+    background-color: #333; /* Màu nền giống như trong ảnh */
+    overflow: hidden;
+}
+
+/* Link menu */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover: Đổi màu nền và chữ khi hover */
+.topnav a:hover {
+    background-color: #7dccff; /* Màu nền khi hover */
+    color: black; /* Màu chữ khi hover */
+}
+
+/* Icon menu (ẩn mặc định) */
+.topnav .icon {
+    display: none;
+}
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 600px) {
+
+    /* Chỉ hiển thị menu Home và icon */
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Khi nhấn icon (JS sẽ thêm class "responsive") */
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: #ddd;
+        border-bottom: 1px solid #4a4a4a;
+    }
+
+    .topnav.responsive a:hover {
+        background-color: #575757; /* Màu nền khi hover */
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        color: white;
+    }
+}

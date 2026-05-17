@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 Menu</title>
+    <style>
+        /*MENU Ngang*/
+        .menu-ngang{
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .menu-ngang li {
+            margin: 0;
+            padding: 10px;
+            background-color: aquamarine;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .menu-ngang li a {
+            text-decoration: none;
+        }
+        .menu-ngang li:hover {
+            background-color: #f39c12;
+            border-radius: 5px;
+        }
+        .menu-ngang li a:hover {
+            font-weight: bold;
+            color: white;
+        }
+        /*MENU Dọc*/
+        .menu-doc {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .menu-doc li {
+            margin: 0;
+            padding: 10px;
+            background-color: #3498db;
+            border-bottom: white solid 1px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .menu-doc li a {
+            text-decoration: none;
+        }
+
+        .menu-doc li:hover {
+            filter: brightness(130%);
+            background-color: aqua;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu-ngang">
+        <li><a href=""><b>Trang chủ</b></a></li>
+        <li><a href=""><b>Giới thiệu</b></a></li>
+        <li><a href=""><b>Sản phẩm</b></a></li>
+        <li><a href=""><b>Dịch vụ</b></a></li>
+        <li><a href=""><b>Liên hệ</b></a></li>
+    </ul>
+    <ul class="menu-doc">
+        <li><a href=""><b>Trang chủ</b></a></li>
+        <li><a href=""><b>Giới thiệu</b></a></li>
+        <li><a href=""><b>Sản phẩm</b></a></li>
+        <li><a href=""><b>Dịch vụ</b></a></li>
+        <li><a href=""><b>Liên hệ</b></a></li>
+    </ul>
+</body>
+</html>
