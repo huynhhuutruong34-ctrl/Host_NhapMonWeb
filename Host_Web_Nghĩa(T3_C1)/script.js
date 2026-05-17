@@ -222,7 +222,7 @@ function handleModalClick(event) {
     closeModalWindow();
   }
   if (event.target.id === 'checkoutBtn') {
-    showModal('Thanh toán', '<p>Giỏ hàng của bạn đã được chuẩn bị.</p>');
+    showModal('Thanh toán', '<p> Giỏ hàng của bạn đã được thanh toán thành công ! .</p>');
   }
   if (event.target.id === 'clearCart') {
     saveCartItems([]);
